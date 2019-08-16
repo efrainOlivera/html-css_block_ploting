@@ -1,9 +1,10 @@
 
 /*CSS reset settings here*/
 *{
- margin: 0px;
- padding: 0px;
+ padding-right: 10px;
+
 }
+
 #wrapper{
  width: 960px;
  background-color: silver;
@@ -24,11 +25,11 @@
 }
 #main_content{
  min-height: 400px;
- width: 700px;
+ width: auto;
  background-color: red;
  display: inline-block;
  margin: 10px 15px;
-vertical-align: 90px;
+ vertical-align: 90px;
 }
 .subcontents{
  min-height: 200px;
@@ -44,3 +45,78 @@ vertical-align: 90px;
  background-color: purple;
  margin: 10px;
 }
+
+@media only screen and (max-width: 480px){
+	#wrapper{
+		width: 100%;
+	}
+	#navigation{
+		display: none;
+	}
+	#main_content{
+		width: 100%;
+		margin: 0px;
+	}
+	.subcontents{
+		width: 90%;
+		margin: 10px 20px;
+	}
+	#advertisement{
+		width: 90%;
+		margin: 10px 20px;
+	}
+}
+@media only screen and (min-width: 481px){
+	#navigation{
+		display:  none;
+	}
+	#wrapper{
+		width: 100%;
+		height: 980px;
+		
+	}
+	#main_content{
+		width: 96%;
+		height: 800px;
+		margin: 10px;
+	}
+	.subcontents{
+		width: 45%;
+		height: 30%;
+		margin: 10px;
+	}
+	#advertisement{
+		width: 95%;
+		margin: 120px 15px;
+	}
+}
+@media only screen and (min-width: 1024px){
+	#wrapper{
+		width: 100%;
+		height: 100%;
+	}
+	#navigation{
+	 display: inline-block;
+	 vertical-align: top;
+	}
+	#main_content{
+		width: 75%;
+		height: 40%;
+		margin-top: .9%;
+		padding: 1%;
+	}
+	.subcontents{
+		width: 29%;
+	}
+	#advertisement{
+		margin: 15px;
+	}
+	
+
+}
+
+
+
+
+
+
